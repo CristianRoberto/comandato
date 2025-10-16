@@ -2,7 +2,7 @@
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
+    ' Limpieza de recursos
     <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,138 +14,160 @@ Partial Class Form1
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-
-
-
-
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
+    ' Diseño de formulario
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        txtCedula = New TextBox()
-        lblCedula = New Label()
-        lblNombre = New Label()
-        txtNombre = New TextBox()
-        lblDireccion = New Label()
-        txtDireccion = New TextBox()
-        lblTelefono = New Label()
-        txtTelefono = New TextBox()
-        btnGuardar = New Button()
-        dgClientes = New DataGridView()
-        CType(dgClientes, ComponentModel.ISupportInitialize).BeginInit()
-        SuspendLayout()
-        ' 
-        ' txtCedula
-        ' 
-        txtCedula.Location = New Point(252, 52)
-        txtCedula.Name = "txtCedula"
-        txtCedula.Size = New Size(150, 23)
-        txtCedula.TabIndex = 1
-        ' 
+        Me.lblTitulo = New Label()
+        Me.lblCedula = New Label()
+        Me.txtCedula = New TextBox()
+        Me.lblNombre = New Label()
+        Me.txtNombre = New TextBox()
+        Me.lblDireccion = New Label()
+        Me.txtDireccion = New TextBox()
+        Me.lblTelefono = New Label()
+        Me.txtTelefono = New TextBox()
+        Me.btnGuardar = New Button()
+        Me.dgClientes = New DataGridView()
+        Me.lblBuscar = New Label()
+        Me.txtBuscarCedula = New TextBox()
+        Me.btnBuscar = New Button()
+        Me.btnMostrarTodos = New Button()
+        CType(Me.dgClientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        ' lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Font = New Font("Segoe UI", 14.25!, FontStyle.Bold, GraphicsUnit.Point)
+        Me.lblTitulo.ForeColor = Color.FromArgb(0, 80, 152)
+        Me.lblTitulo.Location = New Point(270, 10)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New Size(210, 25)
+        Me.lblTitulo.Text = "Registro de Clientes"
+        '
         ' lblCedula
-        ' 
-        lblCedula.AutoSize = True
-        lblCedula.Location = New Point(80, 55)
-        lblCedula.Name = "lblCedula"
-        lblCedula.Size = New Size(44, 15)
-        lblCedula.TabIndex = 2
-        lblCedula.Text = "Cédula"
-        ' 
+        '
+        Me.lblCedula.AutoSize = True
+        Me.lblCedula.Location = New Point(80, 60)
+        Me.lblCedula.Text = "Cédula:"
+        '
+        ' txtCedula
+        '
+        Me.txtCedula.Location = New Point(160, 57)
+        Me.txtCedula.Size = New Size(150, 23)
+        '
         ' lblNombre
-        ' 
-        lblNombre.AutoSize = True
-        lblNombre.Location = New Point(80, 90)
-        lblNombre.Name = "lblNombre"
-        lblNombre.Size = New Size(51, 15)
-        lblNombre.TabIndex = 3
-        lblNombre.Text = "Nombre"
-        ' 
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Location = New Point(80, 95)
+        Me.lblNombre.Text = "Nombre:"
+        '
         ' txtNombre
-        ' 
-        txtNombre.Location = New Point(252, 87)
-        txtNombre.Name = "txtNombre"
-        txtNombre.Size = New Size(250, 23)
-        txtNombre.TabIndex = 4
-        ' 
+        '
+        Me.txtNombre.Location = New Point(160, 92)
+        Me.txtNombre.Size = New Size(250, 23)
+        '
         ' lblDireccion
-        ' 
-        lblDireccion.AutoSize = True
-        lblDireccion.Location = New Point(80, 125)
-        lblDireccion.Name = "lblDireccion"
-        lblDireccion.Size = New Size(58, 15)
-        lblDireccion.TabIndex = 5
-        lblDireccion.Text = "Dirección"
-        ' 
+        '
+        Me.lblDireccion.AutoSize = True
+        Me.lblDireccion.Location = New Point(80, 130)
+        Me.lblDireccion.Text = "Dirección:"
+        '
         ' txtDireccion
-        ' 
-        txtDireccion.Location = New Point(252, 122)
-        txtDireccion.Name = "txtDireccion"
-        txtDireccion.Size = New Size(300, 23)
-        txtDireccion.TabIndex = 6
-        ' 
+        '
+        Me.txtDireccion.Location = New Point(160, 127)
+        Me.txtDireccion.Size = New Size(300, 23)
+        '
         ' lblTelefono
-        ' 
-        lblTelefono.AutoSize = True
-        lblTelefono.Location = New Point(80, 160)
-        lblTelefono.Name = "lblTelefono"
-        lblTelefono.Size = New Size(52, 15)
-        lblTelefono.TabIndex = 7
-        lblTelefono.Text = "Teléfono"
-        ' 
+        '
+        Me.lblTelefono.AutoSize = True
+        Me.lblTelefono.Location = New Point(80, 165)
+        Me.lblTelefono.Text = "Teléfono:"
+        '
         ' txtTelefono
-        ' 
-        txtTelefono.Location = New Point(252, 157)
-        txtTelefono.Name = "txtTelefono"
-        txtTelefono.Size = New Size(150, 23)
-        txtTelefono.TabIndex = 8
-        ' 
+        '
+        Me.txtTelefono.Location = New Point(160, 162)
+        Me.txtTelefono.Size = New Size(150, 23)
+        '
         ' btnGuardar
-        ' 
-        btnGuardar.Location = New Point(252, 195)
-        btnGuardar.Name = "btnGuardar"
-        btnGuardar.Size = New Size(100, 30)
-        btnGuardar.TabIndex = 9
-        btnGuardar.Text = "Guardar"
-        btnGuardar.UseVisualStyleBackColor = True
-        ' 
+        '
+        Me.btnGuardar.BackColor = Color.FromArgb(0, 80, 152)
+        Me.btnGuardar.ForeColor = Color.White
+        Me.btnGuardar.Font = New Font("Segoe UI", 9.75!, FontStyle.Bold, GraphicsUnit.Point)
+        Me.btnGuardar.Location = New Point(160, 200)
+        Me.btnGuardar.Size = New Size(150, 35)
+        Me.btnGuardar.Text = "💾 Guardar Cliente"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
+        ' lblBuscar
+        '
+        Me.lblBuscar.AutoSize = True
+        Me.lblBuscar.Location = New Point(80, 250)
+        Me.lblBuscar.Text = "Buscar por Cédula:"
+        '
+        ' txtBuscarCedula
+        '
+        Me.txtBuscarCedula.Location = New Point(200, 247)
+        Me.txtBuscarCedula.Size = New Size(150, 23)
+        '
+        ' btnBuscar
+        '
+        Me.btnBuscar.BackColor = Color.FromArgb(0, 80, 152)
+        Me.btnBuscar.ForeColor = Color.White
+        Me.btnBuscar.Font = New Font("Segoe UI", 9.0!, FontStyle.Bold, GraphicsUnit.Point)
+        Me.btnBuscar.Location = New Point(360, 245)
+        Me.btnBuscar.Size = New Size(80, 27)
+        Me.btnBuscar.Text = "🔍 Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = False
+        '
+        ' btnMostrarTodos
+        '
+        Me.btnMostrarTodos.BackColor = Color.Gray
+        Me.btnMostrarTodos.ForeColor = Color.White
+        Me.btnMostrarTodos.Font = New Font("Segoe UI", 9.0!, FontStyle.Bold, GraphicsUnit.Point)
+        Me.btnMostrarTodos.Location = New Point(450, 245)
+        Me.btnMostrarTodos.Size = New Size(110, 27)
+        Me.btnMostrarTodos.Text = "↺ Mostrar Todos"
+        Me.btnMostrarTodos.UseVisualStyleBackColor = False
+        '
         ' dgClientes
-        ' 
-        dgClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgClientes.Location = New Point(80, 250)
-        dgClientes.Name = "dgClientes"
-        dgClientes.RowTemplate.Height = 25
-        dgClientes.Size = New Size(600, 150)
-        dgClientes.TabIndex = 10
-        ' 
+        '
+        Me.dgClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgClientes.Location = New Point(80, 290)
+        Me.dgClientes.Size = New Size(640, 130)
+        Me.dgClientes.BackgroundColor = Color.White
+        '
         ' Form1
-        ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(dgClientes)
-        Controls.Add(btnGuardar)
-        Controls.Add(txtTelefono)
-        Controls.Add(lblTelefono)
-        Controls.Add(txtDireccion)
-        Controls.Add(lblDireccion)
-        Controls.Add(txtNombre)
-        Controls.Add(lblNombre)
-        Controls.Add(lblCedula)
-        Controls.Add(txtCedula)
-        Name = "Form1"
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Gestión de Clientes"
-        CType(dgClientes, ComponentModel.ISupportInitialize).EndInit()
-        ResumeLayout(False)
-        PerformLayout()
+        '
+        Me.ClientSize = New Size(820, 460)
+        Me.Controls.Add(Me.lblTitulo)
+        Me.Controls.Add(Me.lblCedula)
+        Me.Controls.Add(Me.txtCedula)
+        Me.Controls.Add(Me.lblNombre)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.lblDireccion)
+        Me.Controls.Add(Me.txtDireccion)
+        Me.Controls.Add(Me.lblTelefono)
+        Me.Controls.Add(Me.txtTelefono)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.lblBuscar)
+        Me.Controls.Add(Me.txtBuscarCedula)
+        Me.Controls.Add(Me.btnBuscar)
+        Me.Controls.Add(Me.btnMostrarTodos)
+        Me.Controls.Add(Me.dgClientes)
+        Me.Name = "Form1"
+        Me.StartPosition = FormStartPosition.CenterScreen
+        Me.Text = "Gestión de Clientes"
+        CType(Me.dgClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
     End Sub
 
-    Friend WithEvents txtCedula As TextBox
+    Friend WithEvents lblTitulo As Label
     Friend WithEvents lblCedula As Label
+    Friend WithEvents txtCedula As TextBox
     Friend WithEvents lblNombre As Label
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents lblDireccion As Label
@@ -153,7 +175,9 @@ Partial Class Form1
     Friend WithEvents lblTelefono As Label
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents btnGuardar As Button
+    Friend WithEvents lblBuscar As Label
+    Friend WithEvents txtBuscarCedula As TextBox
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents btnMostrarTodos As Button
     Friend WithEvents dgClientes As DataGridView
-
 End Class
-

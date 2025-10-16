@@ -26,3 +26,4 @@ C:\Users\Cristian Roberto\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\Win
 C:\Users\Cristian Roberto\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmCreditos.resources
 C:\Users\Cristian Roberto\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmMenu.resources
 C:\Users\Cristian Roberto\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmVentas.resources
+C:\Users\Cristian Roberto\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
