@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "LbSzZlfNeAFxZ0yU1pEJR2tRFoEAf42uSjA7CyEaZM5Olc6PXnkLbWlUmZrinY5yLuihkWjGjN0fKm9KLTQLag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cristian Roberto\\source\\repos\\WinFormsApp1\\WinFormsApp1.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cristian Roberto\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Cristian Roberto\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Cristian Roberto\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Cristian Roberto\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Cristian Roberto\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}
