@@ -19,7 +19,7 @@ Public Class Form1
     Private Sub CargarClientes()
         Try
             Using cn As New SqlConnection(connectionString)
-                Dim da As New SqlDataAdapter("SELECT * FROM Clientes ORDER BY FechaRegistro DESC", cn)
+                Dim da As New SqlDataAdapter("SELECT * FROM Clientes ORDER BY FechaRegistro ASC", cn)
                 Dim dt As New DataTable()
                 da.Fill(dt)
                 dgClientes.DataSource = dt
@@ -33,10 +33,20 @@ Public Class Form1
     ' BOTÓN GUARDAR - INSERTA UN NUEVO CLIENTE
     ' ======================================================
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If String.IsNullOrWhiteSpace(txtCedula.Text) OrElse String.IsNullOrWhiteSpace(txtNombre.Text) Then
+        If String.IsNullOrWhiteSpace(txtCedula.Text) OrElse
+           String.IsNullOrWhiteSpace(txtNombre.Text) OrElse
+           String.IsNullOrWhiteSpace(txtDireccion.Text) OrElse
+           String.IsNullOrWhiteSpace(txtTelefono.Text) Then
             MessageBox.Show("Ingrese todos los campos obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
+
+
+        'If String.IsNullOrWhiteSpace(txtCedula.Text) Then
+        '    MessageBox.Show("Ingrese la cédula.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        '    txtCedula.Focus()
+        '    Exit Sub
+        'End If
 
         Try
             Using cn As New SqlConnection(connectionString)
